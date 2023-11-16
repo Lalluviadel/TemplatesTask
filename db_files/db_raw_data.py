@@ -27,4 +27,11 @@ db_raw_data = [
     {
         'name': 'Warehouse form',
         'warehouse_address': 'text',
-    }]
+    },
+    {
+        'name': 'Discount form',
+        'product_title': 'text',
+        'created_at': 'date',
+        'shop_title': 'text'
+    }
+]
