@@ -1,4 +1,5 @@
 """Main app."""
+import os
 
 from db_files.db_management import TinyDbManager
 
@@ -42,4 +43,4 @@ def get_form():
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0', port=os.getenv('PORT'))
