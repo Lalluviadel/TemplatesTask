@@ -1,3 +1,5 @@
+"""Data to fill the DB."""
+
 db_raw_data = [
     {
         'name': 'User form',
