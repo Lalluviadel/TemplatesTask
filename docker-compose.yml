@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  app:
+    build: ./
+    container_name: app-flask
+    environment:
+      - PYTHONUNBUFFERED=True
+      - PORT=5000
+      - FLASK_DEBUG=1
+    restart: on-failure
+    volumes:
+      - ./:/usr/src/app/
+    ports:
+      - "5000:5000"
+    command: bash -c "python app.py"
